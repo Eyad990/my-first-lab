@@ -1,0 +1,125 @@
+.red{
+    background-color: crimson;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+
+.Group3{
+    background-color:rgb(181, 181, 192)
+
+    
+}
+input{
+    margin:8px 0;
+    padding: 8px 0 px ;
+    border:1px solid #ccc;
+    border-radius: 4px ;
+    display:flex;
+   flex-direction:column;
+    width: 250px;
+}
+.table1{
+    display:flex;
+    align-items: center;
+    margin:8px 0;
+    flex-direction:column;
+    width: 250px;
+}
+.imeage{
+    position:absolute;
+    
+}
+.link{
+    position:absolute;
+    z-index: index 10;
+    text-align:center;
+    
+    
+}
+.span{
+    position:absolute;
+    z-index: index 4;
+    color:blueviolet;
+    text-indent:170px;
+    font-style:italic;
+}
+body{background-image: url(تنزيل.jpg);
+background-position: top right;
+background-repeat:no-repeat;
+background-attachment: fixed;
+margin: 0%;
+    padding: 0%;
+}
+.text{
+    position:absolute;
+    top:40%;
+    left:80%;
+    width: 20%;
+    height: 150px;
+    overflow:scroll;
+    background-color: aquamarine;
+
+}
+ input{color:blue}
+      
+      
+      
+      
+ body {
+      font-family: Arial, sans-serif;
+      
+    }
+
+    .header{
+        background-color: bisque;
+        margin: 0%;
+        padding: 20px;
+        border:10% ;
+        border: 3px dotted blue;
+        border-top:-10px;
+
+    }
+    .intro{
+        background-color: rgb(184, 218, 225);
+        padding: 10px;
+        text-align: center;
+        border: 10%;
+
+    }
+    .projects{
+        background-color: azure;
+        padding: 15px;
+    }
+    .aboutMe{
+        background-color: blanchedalmond;
+         padding: 15px;
+    }
+    h2{
+        color: rgb(14, 144, 144);
+    }
+    a{
+        text-decoration: none
+    }
+    a:hover{
+        color: black;
+    }
+    p{
+        color: blueviolet;
+    }
+    .kau{
+        border-style: solid ;
+        border-radius: 0%;
+    }
+    .inf{
+        border-color: darkgreen;
+    }
+    
+
+
+
+
+

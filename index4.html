@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Average</title>
+  <style>
+    body{
+     
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 10px;
+      padding:10px ;
+      border-collapse: collapse;
+      
+      
+    }
+    th, td {
+        
+      border: 2px solid #0b0b0b;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #5214d8;
+    }
+    
+  </style>
+</head>
+<body>
+
+<h2>إدخال الدرجات</h2>
+
+<table border="2" id="tablee">
+  <tr>
+    <th class="num">#</th>
+    <th>الدرجة</th>
+  </tr> 
+ 
+</table>
+
+
+
+<script>
+  var total = 0;
+  var gradeCounter  = 0;
+  var grade;
+  var gradeValue;
+  var average;
+  var table = document.getElementById("tablee");
+  
+
+  
+  grade = window.prompt("Enter integer grade, -1 to Quit:", "0");
+  gradeValue = parseInt(grade);
+
+
+  while (gradeValue != -1) {
+    total = total + gradeValue;
+    gradeCounter = gradeCounter + 1;
+
+    
+    var newRow = table.insertRow(-1);
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    cell1.textContent = gradeCounter;
+    cell2.textContent = gradeValue;
+    
+    
+
+   
+    grade = window.prompt("Enter integer grade, -1 to Quit:", "0");
+    gradeValue = parseInt(grade);
+  }
+
+ 
+  if (gradeCounter != 0) {
+    average = total / gradeCounter;
+    var newRow = table.insertRow(-1)
+    var cell3 = newRow.insertCell(0);
+    var cell4 = newRow.insertCell(1);
+    cell1.textContent = "average";
+    cell1.style.color = "red";
+    cell2.textContent = average.toFixed(3);
+    cell2.style.color = "red";
+    
+  } 
+     else {
+    var noRow = table.insertRow(-1);
+    var noCell = noRow.insertCell(0);
+    noCell.colSpan = 2;
+    noCell.textContent = "لم يتم إدخال أي درجة.";
+  }
+</script>
+
+</body>
+</html>
